@@ -11,4 +11,5 @@ package marl.bank;
 public class DepositMoney {
     private int moneydeposited;
     
+    public abstract void deposit(double amount);
 }
