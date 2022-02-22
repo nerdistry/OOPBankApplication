@@ -11,6 +11,12 @@ import java.util.Date;
  */
 public class CheckmyStatus extends AccountHolder{
     
+    private static double fee = 4.2;
+    
+    public CheckingAccount(){
+    }
+    
+    
     private int bankIDnumber;
     public String fullName;
     public int age;
@@ -63,6 +69,11 @@ public class CheckmyStatus extends AccountHolder{
    public void setDate(Date date) {
        this.date = date;
    }
+    public void deposit(double amount) {
+    }
+    
+    public void withdraw(double amount) {
+    }
 }
 
 
