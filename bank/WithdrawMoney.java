@@ -10,5 +10,5 @@ package marl.bank;
  */
 public class WithdrawMoney extends AccountHolder {
     
-
+    public abstract void withdraw (double amount);
 }
