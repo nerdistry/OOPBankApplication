@@ -11,8 +11,10 @@ package marl.bank;
 public class AccountHolder {
     
     public String fullName;
+    public int accountNumber;
     public int age;
     public int nationalIDnumber;
+    public double balance;
     
     @Override
     public boolean equals(Object o) {
@@ -23,6 +25,10 @@ public class AccountHolder {
         return fullName;
     }
     
+    public int getaccountNumber() {
+        return accountNumber;
+    }
+    
     public int age(){
         return age;
     }
@@ -31,8 +37,17 @@ public class AccountHolder {
         return nationalIDnumber;
     }
     
+    public double balance(){
+       return balance;
+    }
+    
     public void fullName(String s) {
         this.fullName = s;
+    }
+    
+    public void accountNumber() {
+        this.accountNumber = accountNumber;
+        balance = 0;
     }
     
      public void age(int s) {
@@ -42,9 +57,17 @@ public class AccountHolder {
       public void nationalIDnumber(int s) {
         this.nationalIDnumber = s;
     }
+    
+    public void double balance(){
+        return this.balance;
+    }
       
        public void setfullName(String s) {
         this.fullName = s;
+    }
+    
+    public void setaccountNumber(int s) {
+        this.accountNumber = s;
     }
     
      public void setage(int s) {
